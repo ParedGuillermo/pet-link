@@ -1,0 +1,45 @@
+/* Tailwind directives (si lo usas) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales personalizados */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF3DC; /* Color crema de tu paleta */
+  color: #3A2E2E; /* Color marrón oscuro */
+}
+
+/* Fuentes personalizadas (importa Baloo 2 y Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+/* Animaciones para microinteracciones */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Estilos para el QR (ejemplo) */
+.qr-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-first: padding seguro para dispositivos pequeños */
+@media (max-width: 640px) {
+  .safe-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.smooth-transition {
+  transition: all 0.2s ease-in-out; 
+} 

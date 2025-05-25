@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { supabase } from '../services/supabase';
+import { supabase } from "../../services/supabase";
 import { useAuth } from '../context/AuthContext';
 import { motion } from 'framer-motion';
 
